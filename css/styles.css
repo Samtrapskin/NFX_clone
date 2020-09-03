@@ -1,0 +1,83 @@
+body {
+    background-color: #000000;
+}
+
+.navbar {
+    height: 50px;
+    margin-top: 25px;
+
+}
+
+
+
+#nav-logo {
+    text-align: center;
+}
+
+.netflix-nav {
+ 
+    list-style-type: none;
+    display: flex;
+    margin-top: 25px;
+}
+/* .netflix-nav-right{
+    margin-top: 25px;
+
+} */
+.nav-item {
+    color: #ffffff;
+    display: inline;
+    margin: auto;
+    
+}
+
+.nav-link {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.btn-secondary, .btn-secondary:hover {
+    
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+.dropdown-item{
+color: white;
+background-color: teal;
+}
+
+
+
+    
+
+      .navbar-toggler {
+          color: white;
+          position: fixed;
+          margin-left: 120px
+      }
+
+
+      @media (max-width: 767px) {
+        #right-nav{
+            display: none;
+        }
+
+        #dsktp-logo{
+            display: none;
+        }
+      }
+      @media (min-width: 768px) {
+      #logo-mobile{
+            display: none;
+      }
+    }
+
+
+      @media (max-width: 1099px) {
+        #home,#continue, #latest, #kids,#dvd{
+            display: none;
+        }
+      }
