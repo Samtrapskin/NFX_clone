@@ -2,6 +2,21 @@ body {
     background-color: #000000;
 }
 
+#main {
+    z-index: 22;
+    
+    /* display: inherit; */
+    width: 100%;
+    position: fixed;
+}
+
+
+#navigation {
+   z-index:20;
+   display: flex;
+   justify-content: center;
+}
+
 .navbar {
     height: 50px;
     margin-top: 25px;
@@ -81,3 +96,20 @@ background-color: teal;
             display: none;
         }
       }
+
+      /* 
+      ***********************
+         VIDEO BACKGROUND  
+      *********************** 
+         */
+
+        #movie-container{
+            z-index: 0;
+        }
+         /* #myVideo {
+            position: inherit;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+          } */

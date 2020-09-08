@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetMovies</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetMovies</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/styles.css">
-
-    
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
- 
+  <link rel="stylesheet" href="css/styles.css">
 
 
-      <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-  crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-  crossorigin="anonymous"></script>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
 </head>
+
+  <script src="scripts.js"></script>
 <body>
 
-     <!-- 
+  <!-- 
     *********************
         NAV BAR 
     *********************
     -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-1">
-
-        <a class="navbar-brand" id="dsktp-logo" href="#"><img src="css/images/netflix-nav.png" width="120" height="75" alt="netflix-logo"></a>
-        <a class="navbar-brand" id="logo-mobile" href="#"><img src="css/images/Netflix-mobile.png" width="120" height="75" alt="netflix-logo"></a>
-      </div>
+  <div class="container-fluid" id="navigation">
+    <video autoplay muted loop id="myVideo">
+      <source src="milk.mp4" type="video/mp4">
+    </video> 
+    <div class="row" id="main">
+      <div class="col-1">
+        <a class="navbar-brand" id="dsktp-logo" href="#"><img src="css/images/netflix-nav.png" width="120" height="75"
+            alt="netflix-logo"></a>
+        <a class="navbar-brand" id="logo-mobile" href="#"><img src="css/images/Netflix-mobile.png" width="120"
+            height="75" alt="netflix-logo"></a>
+      </div> <!-- end column -->
 
       <div class="col-sm-10 col-md-6">
         <ul class="netflix-nav">
@@ -49,7 +58,7 @@
             <a class="nav-link" href="#">Continue Watching</a>
           </li>
           <li class="nav-item >
-            <a class="nav-link" href="#">TV</a>
+            <a class=" nav-link" href="#">TV</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Movies</a>
@@ -61,38 +70,68 @@
             <a class="nav-link disabled" href="#">My list</a>
           </li>
         </ul>
-       
-      </div>
-    
-    <div class="col-md-2 col-sm-6" id="right-nav">
+      </div> <!-- end column -->
+
+      <div class="col-md-2 col-sm-6" id="right-nav">
         <ul class="netflix-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-            </li>
-     
-            <li class="nav-item" id="kids">
-              <a class="nav-link" href="#">kids</a>
-            </li>
-            <li class="nav-item" id="dvd">
-              <a class="nav-link" href="#">dvd</i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-gift"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+          </li>
+          <li class="nav-item" id="kids">
+            <a class="nav-link" href="#">kids</a>
+          </li>
+          <li class="nav-item" id="dvd">
+            <a class="nav-link" href="#">dvd</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-gift"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+          </li>
+        </ul>
+      </div> <!-- end column -->
+</div>
+   
+
+  </div> <!-- end container -->
+
+
+  <!-- 
+    *********************
+        VIDEO BKGND
+    *********************
+    -->
+<!-- <div class="container-fluid" id="movie-container">
+      <video autoplay muted loop id="myVideo">
+      <source src="nfx.mp4" type="video/mp4">
+    </video> 
+</div> -->
+
     
 
-  
-      </div>
-      </div> 
-   
-   
+    <script>
+      // Get the video
+      var video = document.getElementById("myVideo");
+      
+      // Get the button
+      var btn = document.getElementById("myBtn");
+      
+      // Pause and play the video, and change the button text
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+      </script>
+
 </body>
+
 </html>
