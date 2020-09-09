@@ -106,10 +106,18 @@ background-color: teal;
         #movie-container{
             z-index: 0;
         }
-         /* #myVideo {
-            position: inherit;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-          } */
+          #myVideo {
+            width: 100%;
+          } 
+
+          .description-overlay {
+          top: 245px;
+          position: fixed;
+      }
+
+      .stnd-txt {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size:8px;
+        margin: auto;
+      }
