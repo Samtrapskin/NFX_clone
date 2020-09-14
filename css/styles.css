@@ -2,9 +2,12 @@ body {
     background-color: #000000;
 }
 
+.black {
+  background-color: #000000;
+}
 #main {
     z-index: 22;
-    
+    transition: all 1s ease-in-out;
     /* display: inherit; */
     width: 100%;
     position: fixed;
@@ -12,9 +15,8 @@ body {
 
 
 #navigation {
-   z-index:20;
-   display: flex;
-   justify-content: center;
+   position: absolute;
+   top: 0;
 }
 
 .navbar {
@@ -32,7 +34,7 @@ body {
 .netflix-nav {
  
     list-style-type: none;
-    display: flex;
+    display: inline-flex;
     margin-top: 25px;
 }
 /* .netflix-nav-right{
@@ -85,6 +87,12 @@ background-color: teal;
         }
       }
       @media (min-width: 768px) {
+      #right-nav{
+        display: inline-flex;
+        justify-content: flex-end;
+      }
+    }
+      @media (min-width: 768px) {
       #logo-mobile{
             display: none;
       }
@@ -112,7 +120,7 @@ background-color: teal;
 
           .description-overlay {
             top: 320px;
-            position: absolute;
+            position: fixed;
             margin-left: 20px;
         }
       
@@ -172,3 +180,33 @@ padding-right: 5px;
        .btn{
           font-size:18px;
       } 
+      @media (min-width: 769px) {
+      .description-overlay {
+        position: absolute;
+      }
+      }
+
+
+      @media (max-width: 1023px) {
+        .description-overlay {
+      top: 260px;
+        }
+        #overlay-heading {
+          font-size: 22px;
+        }
+        #overlay-buttons{
+          margin-top: 0px;
+        }
+
+        .btn {
+          font-size: 14px;
+          padding: 2px 12px;
+      }
+
+      }
+
+      @media (max-width: 692px) {
+        .description-overlay {
+          top: 184px;
+        }
+      }
