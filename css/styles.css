@@ -312,6 +312,10 @@ a:hover {
   z-index: 2;
 }
 
+.tile:hover .tile__details {
+  opacity: 1;
+}
+
 .tile__title {
   position: absolute;
   bottom: 0;
@@ -321,11 +325,13 @@ a:hover {
   -webkit-transform: translate3d(-62.5px, 0, 0);
           transform: translate3d(-62.5px, 0, 0);
 }
-
+.row__inner:hover .tile {
+  opacity: 0.3;
+}
 .row__inner:hover .tile:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
- 
+  opacity: 1;
 }
 .tile:hover ~ .tile {
   -webkit-transform: translate3d(125px, 0, 0);
